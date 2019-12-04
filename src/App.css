@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+body { 
+  margin:0 auto;
+  background-color: rgb(43, 35, 95);
+  color: bisque;
+  box-sizing: border-box;
+}
+
+
+.myWeek, .intro{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.actList li{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  
+}
+
+.weekNum{
+  margin-left: 35px;
+  color: grey;
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+.weekBtn{
+  width: 100px;
+  height: 40px;
+} 
+
+.weekInp{
+  width: 650px;
+  height: 40px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+.days{
+  border: 1px dotted white; 
+  padding: 20px; 
+  font-size: 1.4rem;
+  margin: 25px 80px;
+  background-color: rgb(40, 32, 87);
+}
+
+
+.myForm, .deleteBtn, .weekBtn, .weekInp, .noteBtn{
+  border: 2px solid darkgrey;
+  border-radius: 3px;
+  margin: 5px;
+  background-color: rgb(43, 35, 95);
+  color: bisque;
+}
+
+.noteBtn{
+  height: 42px;
+  width: 50px;
+}
+
+
+.myForm:focus, .deleteBtn:focus, .quoteBtn:focus, .weekBtn:focus, .weekInp:focus, .noteBtn:focus{
+  outline: none;
+}
+
+.main ul, li {
+  list-style: none;
+  
+}
+.main h1{
+  margin: 40px;
+  color: rgb(180, 180, 34);
+  font-size: 2.8rem;
+}
+
+.actList {
+  padding: 10px; 
+}
+
+.pickActList{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.weekActTime{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  color: rgb(180, 180, 34);
+}
+
+.pickAct{
+  display: grid;
+  grid-template-columns: auto auto;
+}
